@@ -52,7 +52,7 @@ class HC2Device(Node):
             try:
                 return self.driver.get_location_name( self.location )
             except Excepton as e:
-                return "" #TODO: Ignorance is not bliss
+                return "N/A" #TODO: Ignorance is not bliss
         return ""
         
     @property

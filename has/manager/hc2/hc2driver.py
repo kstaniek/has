@@ -473,6 +473,8 @@ class HC2Driver(Driver):
         self.send_msg( Driver.MsgQueue_Command,  "GET", "/api/globalVariables")
             
     def get_location_name(self, location_id):
+        if location_id == 0:
+            return 'Unassigned'
         for location in self.locations:
             if location['id'] == location_id:
                 return location['name']

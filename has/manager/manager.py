@@ -17,7 +17,7 @@ from configparser import ConfigParser
 from threading import Lock
 
 
-logging.basicConfig(format='%(asctime)s %(levelname)s:\t%(message)s', filename='manager.log', filemode='w', level=logging.ERROR)
+#logging.basicConfig(format='%(asctime)s %(levelname)s:\t%(message)s', filename='manager.log', filemode='w', level=logging.DEBUG)
 #logging.basicConfig(format='%(asctime)s %(levelname)s:\t%(message)s', level=logging.DEBUG)
 #logging.basicConfig(format='%(asctime)s %(levelname)s:\t%(message)s', level=logging.INFO)
 logger = logging.getLogger('manager')
